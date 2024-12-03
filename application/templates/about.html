@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content%}
+
+   <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Us<br></h2>
+        <p><span>Learn More</span> <span class="description-title">About Us</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+            <img src="{% static 'assets/img/restaurant.jpg' %}" class="img-fluid mb-4" alt="">
+
+          </div>
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="250">
+            <div class="content ps-0 ps-lg-5">
+                <h3>The Royal</h3>
+                    <p>
+                    Nestled in the heart of Kitale, The Royal Restaurant has been a cornerstone of fine dining and culinary excellence. Since our doors opened, we have been driven by a singular vision: to create a dining experience that combines exceptional food, outstanding service, and a warm, inviting atmosphere. Inspired by both local flavors and global culinary trends, we aim to celebrate the rich traditions of our community while offering an innovative approach to modern cuisine
+                    </p>
+                 <p>At The Royal, every meal is more than just food—it’s a celebration of life’s finest moments. Whether you’re joining us for a casual lunch, an intimate dinner, or a grand celebration, our team is committed to ensuring your time with us is unforgettable. With a menu crafted by passionate chefs and an ambiance designed to make you feel at home, we promise an experience that delights all your senses.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+     <div class="container">
+
+        <div class="row gy-4">
+            <div class="col-lg-5" data-aos="fade-up" data-aos-delay="250">
+                <div class="content ps-0 ps-lg-5">
+                     <h3>Our Mission</h3>
+              <p >Our mission is simple: to make every guest feel like royalty. From the freshest ingredients to the most attentive service, we are dedicated to providing a dining experience that reflects our passion for hospitality. Located in the vibrant town of Kitale, The Royal is more than just a restaurant—it’s a space where community and culture come together to create something extraordinary.</p>
+                <p>We strive to exceed expectations by continually innovating our menu, refining our service, and creating an environment that feels both luxurious and welcoming. At The Royal, every guest is a part of our family, and every meal is crafted with care and love.</p>
+                </div>
+             </div>
+
+            <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+            <img src="{% static 'assets/img/pool.jpg' %}" class="img-fluid mb-4" alt="">
+           </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section light-background">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="why-box">
+
+              <h3>Why Choose The Royal</h3>
+              <p>
+                At The Royal Restaurant, we pride ourselves on delivering an exceptional dining experience that combines quality, elegance and authencity.
+              </p>
+              <div class="text-center">
+                <a href="#" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Why Box -->
+
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="col-xl-4">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-clipboard-data"></i>
+                  <h4>Versatile Menu</h4>
+                  <p>From local delicacies to International favorites, our diverse menu caters to every plate and dietary preference.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-gem"></i>
+                  <h4>Convenient Reservation</h4>
+                  <p>Our streamlined online reservation system ensures hassle-free booking for your perfect table.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-inboxes"></i>
+                  <h4>Unmatched Atmosphere</h4>
+                  <p>Whether you're enjoying an intimate dinner or hosting a celebration, our warm and stylish ambiance makes every moment special.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+{% endblock %}

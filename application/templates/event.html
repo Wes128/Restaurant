@@ -1,0 +1,196 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content%}
+ <!-- Events Section -->
+    <section id="events" class="events section">
+
+<!--      <img class="slider-bg" src="../../static/assets/img/events-bg.jpg" alt="" data-aos="fade-in">-->
+
+      <div class="container">
+
+        <div class="swiper init-swiper" data-aos="fade-up" data-aos-delay="100">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="row gy-4 event-item">
+                <div class="col-lg-6">
+                  <img src="{% static 'assets/img/events-1.jpg' %}" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Birthday Parties</h3>
+                  <div class="price">
+                    <p><span>Ksh.30000</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Make your special day unforgettable with an elegant birthday at The Royal.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check2-circle"></i> <span>A comfortable and stylish setting for all ages to enjoy.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Music and live bands to keep your guests happy every moment.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Exceptional range of menu option tailored to your preferences.</span></li>
+                  </ul>
+                  <p>
+                    Let us make your birthday Special. Celebrate with us and create memories that last a lifetime.
+                  </p>
+                </div>
+              </div>
+            </div><!-- End Slider item -->
+
+            <div class="swiper-slide">
+              <div class="row gy-4 event-item">
+                <div class="col-lg-6">
+                  <img src="{% static 'assets/img/graduation.jpg' %}" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Graduation Parties</h3>
+                  <div class="price">
+                    <p><span>Ksh.35000</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Celebrate your graduation for your academic achievements in style with us at The Royal Restaurant:
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check2-circle"></i> <span>A perfect venue to honour your achievements with family and friends.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Graduation themed decorations to make the atmosphere special.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Exceptional hospitality to make your graduation ceremony memorable.</span></li>
+                  </ul>
+                  <p>
+                    Book your Graduation Ceremony Today and create cherished memories with family and friends.
+                  </p>
+                </div>
+              </div>
+            </div><!-- End Slider item -->
+
+            <div class="swiper-slide">
+              <div class="row gy-4 event-item">
+                <div class="col-lg-6">
+                  <img src="{% static 'assets/img/wedding.jpg' %}" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Wedding Parties</h3>
+                  <div class="price">
+                    <p><span>Ksh.50000</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Make your Wedding Party unforgettable with our elegant venue, tailored menus and unmatched service.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check2-circle"></i> <span>A stunning and romantic space for your special day</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Delightful dishes to suit every taste.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Personalized decorations to match your theme.</span></li>
+                  </ul>
+                  <p>
+                    Let us take care of every detail while you focus on creating cherished memories.
+                  </p>
+                </div>
+              </div>
+            </div><!-- End Slider item -->
+
+            <div class="swiper-slide">
+              <div class="row gy-4 event-item">
+                <div class="col-lg-6">
+                  <img src="{% static 'assets/img/live-music' %}.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Live Music Nights</h3>
+                  <div class="price">
+                    <p><span>Ksh.5000</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Turn your evenings into a celebration of great food and enchanting melodies at The Royal Restaurant:
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check2-circle"></i> <span>A chance to connect with fellow music lovers and support local talents.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Enjoy discounted drinks and exclusive meals during live music nights.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>An elegant setting that lets you savor the music and the moment.</span></li>
+                  </ul>
+                  <p>
+                  Don't miss out. Reserve your table today and make your evenings extraordinary.
+                  </p>
+                </div>
+              </div>
+            </div><!-- End Slider item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Events Section -->
+
+<!--Book a table section-->
+    <!-- Book A Table Section -->
+<section id="book-a-table" class="book-a-table section">
+      <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+        <h2>Book A Table</h2>
+        <p><span>Book Your</span> <span class="description-title">Stay With Us<br></span></p>
+  </div><!-- End Section Title -->
+
+<!--  <div class="container">-->
+<!--    <div class="row g-0" data-aos="fade-up" data-aos-delay="100">-->
+<!--      <div class="col-lg-4 reservation-img" style="background-image: url(../../static/assets/img/reservation.jpg);"></div>-->
+<!--          <div class="col-lg-8 d-flex align-items-center reservation-form-bg" data-aos="fade-up" data-aos-delay="200">-->
+<!--            <div class="row">-->
+<!--              <div class="col-lg-4"></div>-->
+<!--               <div class="col-lg-8">-->
+<!--                  <h1>Book an Appointment</h1>-->
+<!--                  {% if success %}-->
+<!--                  <p class="text-success">Your reservation has been made successfully.</p>-->
+<!--                  {% endif %}-->
+
+<!--                  <form action="" method="POST" >-->
+<!--                      {% csrf_token %}-->
+<!--                      {{ form.as_p }}-->
+<!--                      <button type="submit" class="btn btn-primary w-100">Book</button>-->
+<!--                  </form>-->
+<!--               </div>-->
+<!--&lt;!&ndash;              <div class="col-lg-1"></div>&ndash;&gt;-->
+<!--            </div>-->
+<!--          </div>&lt;!&ndash; End Reservation Form &ndash;&gt;-->
+<!--    </div>-->
+<!--  </div>-->
+
+<!--</section>&lt;!&ndash; /Book A Table Section &ndash;&gt;-->
+<div class="reservation_container">
+    <div class="row align-items-stretch">
+        <!-- Image Section -->
+        <div class="col-md-6 text-center">
+            <div class="image_section" >
+            <img src="{% static 'assets/img/about.jpg' %}" alt="Reservation Image" class="img-fluid rounded ">
+            </div>
+        </div>
+
+        <!-- Form Section -->
+        <div class="col-md-6">
+            <div class="form_section" >
+<!--            <h2 class="text-center">Make a Reservation</h2>-->
+<!--            <p class="text-center">Experience something new every moment.</p>-->
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary w-100 mt-3">Submit Reservation</button>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+{% endblock %}

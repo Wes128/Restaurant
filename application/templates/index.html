@@ -1,0 +1,349 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content%}
+
+<body class="index-page">
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2" data-aos="fade-up" data-aos-delay="400">
+            <div class="swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 40
+                    },
+                    "1200": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 1
+                    }
+                  }
+                }
+              </script>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="{% static 'assets/img/restaurant.jpg' %}" alt="Image" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                  <img src="{% static 'assets/img/pool.jpg' %}" alt="Image" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                  <img src="{% static 'assets/img/pool.jpg' %}" alt="Image" class="img-fluid">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="col-lg-4 order-lg-1">
+            <span class="section-subtitle" data-aos="fade-up">Welcome</span>
+            <h1 class="mb-4" data-aos="fade-up">
+              Experience The Best Dining in Town.
+            </h1>
+            <p data-aos="fade-up">
+             welcome to The Royal Restaurant where flavor meets comfort. Explore our menu and experience the best dinning in town.
+            </p>
+            <p data-aos="fade-up" >
+              Book a table now for an unforgettable dining experience!
+            </p>
+            <p class="mt-5" data-aos="fade-up">
+              <a href="{% url 'event' %}" class="btn btn-primary">Book a table</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!--jumbotron-->
+    <div class="container my-5">
+      <div class="p-5 text-center bg-light border rounded-3">
+        <h1 class="display-4">Welcome to The Royal Restaurant!</h1>
+    <!--    <p class="lead">This is a simple hero unit, a jumbotron-style component for showcasing key content.</p>-->
+        <hr class="my-4">
+        <p>"Welcome to The Royal, where culinary excellence meets unforgettable dining experiences. Whether you're planning a romantic evening, a family gathering, or a casual meal with friends, we invite you to reserve your table and indulge in our exquisite menu crafted to delight every palate. At The Royal, we pride ourselves on exceptional service, a warm ambiance, and dishes made from the freshest ingredients. Book your table today and let us make your visit truly royal!" </p>
+        <a class="btn btn-primary btn-lg" href="{% url 'about' %}" role="button">Learn more</a>
+      </div>
+    </div>
+
+
+
+<!--    &lt;!&ndash; Stats Section &ndash;&gt;-->
+<!--    <section id="stats" class="stats section dark-background">-->
+
+<!--      <img src="staticstats-bg.jpg" alt="" data-aos="fade-in">-->
+
+<!--      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">-->
+
+<!--        <div class="row gy-4">-->
+
+<!--          <div class="col-lg-3 col-md-6">-->
+<!--            <div class="stats-item text-center w-100 h-100">-->
+<!--              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>-->
+<!--              <p>Clients</p>-->
+<!--            </div>-->
+<!--          </div>&lt;!&ndash; End Stats Item &ndash;&gt;-->
+
+<!--          <div class="col-lg-3 col-md-6">-->
+<!--            <div class="stats-item text-center w-100 h-100">-->
+<!--              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>-->
+<!--              <p>Projects</p>-->
+<!--            </div>-->
+<!--          </div>&lt;!&ndash; End Stats Item &ndash;&gt;-->
+
+<!--          <div class="col-lg-3 col-md-6">-->
+<!--            <div class="stats-item text-center w-100 h-100">-->
+<!--              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>-->
+<!--              <p>Hours Of Support</p>-->
+<!--            </div>-->
+<!--          </div>&lt;!&ndash; End Stats Item &ndash;&gt;-->
+
+<!--          <div class="col-lg-3 col-md-6">-->
+<!--            <div class="stats-item text-center w-100 h-100">-->
+<!--              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>-->
+<!--              <p>Workers</p>-->
+<!--            </div>-->
+<!--          </div>&lt;!&ndash; End Stats Item &ndash;&gt;-->
+
+<!--        </div>-->
+
+<!--      </div>-->
+
+<!--    </section>&lt;!&ndash; /Stats Section &ndash;&gt;-->
+
+
+
+<!--    &lt;!&ndash; Testimonials Section &ndash;&gt;-->
+<!--    <section id="testimonials" class="testimonials section light-background">-->
+
+<!--      &lt;!&ndash; Section Title &ndash;&gt;-->
+<!--      <div class="container section-title" data-aos="fade-up">-->
+<!--        <h2>TESTIMONIALS</h2>-->
+<!--        <p>What Are They <span class="description-title">Saying About Us</span></p>-->
+<!--      </div>&lt;!&ndash; End Section Title &ndash;&gt;-->
+
+<!--      <div class="container" data-aos="fade-up" data-aos-delay="100">-->
+
+<!--        <div class="swiper init-swiper">-->
+<!--          <script type="application/json" class="swiper-config">-->
+<!--            {-->
+<!--              "loop": true,-->
+<!--              "speed": 600,-->
+<!--              "autoplay": {-->
+<!--                "delay": 5000-->
+<!--              },-->
+<!--              "slidesPerView": "auto",-->
+<!--              "pagination": {-->
+<!--                "el": ".swiper-pagination",-->
+<!--                "type": "bullets",-->
+<!--                "clickable": true-->
+<!--              }-->
+<!--            }-->
+<!--          </script>-->
+<!--          <div class="swiper-wrapper">-->
+
+<!--            <div class="swiper-slide">-->
+<!--              <div class="testimonial-item">-->
+<!--                <div class="row gy-4 justify-content-center">-->
+<!--                  <div class="col-lg-6">-->
+<!--                    <div class="testimonial-content">-->
+<!--                      <p>-->
+<!--                        <i class="bi bi-quote quote-icon-left"></i>-->
+<!--                        <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>-->
+<!--                        <i class="bi bi-quote quote-icon-right"></i>-->
+<!--                      </p>-->
+<!--                      <h3>Saul Goodman</h3>-->
+<!--                      <h4>Ceo &amp; Founder</h4>-->
+<!--                      <div class="stars">-->
+<!--                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="col-lg-2 text-center">-->
+<!--                    <img src="statictestimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="">-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>&lt;!&ndash; End testimonial item &ndash;&gt;-->
+
+<!--            <div class="swiper-slide">-->
+<!--              <div class="testimonial-item">-->
+<!--                <div class="row gy-4 justify-content-center">-->
+<!--                  <div class="col-lg-6">-->
+<!--                    <div class="testimonial-content">-->
+<!--                      <p>-->
+<!--                        <i class="bi bi-quote quote-icon-left"></i>-->
+<!--                        <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>-->
+<!--                        <i class="bi bi-quote quote-icon-right"></i>-->
+<!--                      </p>-->
+<!--                      <h3>Sara Wilsson</h3>-->
+<!--                      <h4>Designer</h4>-->
+<!--                      <div class="stars">-->
+<!--                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="col-lg-2 text-center">-->
+<!--                    <img src="statictestimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="">-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>&lt;!&ndash; End testimonial item &ndash;&gt;-->
+
+<!--            <div class="swiper-slide">-->
+<!--              <div class="testimonial-item">-->
+<!--                <div class="row gy-4 justify-content-center">-->
+<!--                  <div class="col-lg-6">-->
+<!--                    <div class="testimonial-content">-->
+<!--                      <p>-->
+<!--                        <i class="bi bi-quote quote-icon-left"></i>-->
+<!--                        <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>-->
+<!--                        <i class="bi bi-quote quote-icon-right"></i>-->
+<!--                      </p>-->
+<!--                      <h3>Jena Karlis</h3>-->
+<!--                      <h4>Store Owner</h4>-->
+<!--                      <div class="stars">-->
+<!--                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="col-lg-2 text-center">-->
+<!--                    <img src="statictestimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="">-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>&lt;!&ndash; End testimonial item &ndash;&gt;-->
+
+<!--            <div class="swiper-slide">-->
+<!--              <div class="testimonial-item">-->
+<!--                <div class="row gy-4 justify-content-center">-->
+<!--                  <div class="col-lg-6">-->
+<!--                    <div class="testimonial-content">-->
+<!--                      <p>-->
+<!--                        <i class="bi bi-quote quote-icon-left"></i>-->
+<!--                        <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>-->
+<!--                        <i class="bi bi-quote quote-icon-right"></i>-->
+<!--                      </p>-->
+<!--                      <h3>John Larson</h3>-->
+<!--                      <h4>Entrepreneur</h4>-->
+<!--                      <div class="stars">-->
+<!--                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="col-lg-2 text-center">-->
+<!--                    <img src="statictestimonials/testimonials-4.jpg" class="img-fluid testimonial-img" alt="">-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>&lt;!&ndash; End testimonial item &ndash;&gt;-->
+
+<!--          </div>-->
+<!--          <div class="swiper-pagination"></div>-->
+<!--        </div>-->
+
+<!--      </div>-->
+
+<!--    </section>&lt;!&ndash; /Testimonials Section &ndash;&gt;-->
+
+
+<!--    &lt;!&ndash; Chefs Section &ndash;&gt;-->
+<!--    <section id="chefs" class="chefs section">-->
+
+<!--      &lt;!&ndash; Section Title &ndash;&gt;-->
+<!--      <div class="container section-title" data-aos="fade-up">-->
+<!--        <h2>chefs</h2>-->
+<!--        <p><span>Our</span> <span class="description-title">Proffesional Chefs<br></span></p>-->
+<!--      </div>&lt;!&ndash; End Section Title &ndash;&gt;-->
+
+<!--      <div class="container">-->
+
+<!--        <div class="row gy-4">-->
+
+<!--          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">-->
+<!--            <div class="team-member">-->
+<!--              <div class="member-img">-->
+<!--                <img src="staticchefs/chefs-1.jpg" class="img-fluid" alt="">-->
+<!--                <div class="social">-->
+<!--                  <a href=""><i class="bi bi-twitter-x"></i></a>-->
+<!--                  <a href=""><i class="bi bi-facebook"></i></a>-->
+<!--                  <a href=""><i class="bi bi-instagram"></i></a>-->
+<!--                  <a href=""><i class="bi bi-linkedin"></i></a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="member-info">-->
+<!--                <h4>Walter White</h4>-->
+<!--                <span>Master Chef</span>-->
+<!--                <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>&lt;!&ndash; End Chef Team Member &ndash;&gt;-->
+
+<!--          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">-->
+<!--            <div class="team-member">-->
+<!--              <div class="member-img">-->
+<!--                <img src="staticchefs/chefs-2.jpg" class="img-fluid" alt="">-->
+<!--                <div class="social">-->
+<!--                  <a href=""><i class="bi bi-twitter-x"></i></a>-->
+<!--                  <a href=""><i class="bi bi-facebook"></i></a>-->
+<!--                  <a href=""><i class="bi bi-instagram"></i></a>-->
+<!--                  <a href=""><i class="bi bi-linkedin"></i></a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="member-info">-->
+<!--                <h4>Sarah Jhonson</h4>-->
+<!--                <span>Patissier</span>-->
+<!--                <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>&lt;!&ndash; End Chef Team Member &ndash;&gt;-->
+
+<!--          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">-->
+<!--            <div class="team-member">-->
+<!--              <div class="member-img">-->
+<!--                <img src="staticchefs/chefs-3.jpg" class="img-fluid" alt="">-->
+<!--                <div class="social">-->
+<!--                  <a href=""><i class="bi bi-twitter-x"></i></a>-->
+<!--                  <a href=""><i class="bi bi-facebook"></i></a>-->
+<!--                  <a href=""><i class="bi bi-instagram"></i></a>-->
+<!--                  <a href=""><i class="bi bi-linkedin"></i></a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="member-info">-->
+<!--                <h4>William Anderson</h4>-->
+<!--                <span>Cook</span>-->
+<!--                <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>&lt;!&ndash; End Chef Team Member &ndash;&gt;-->
+
+<!--        </div>-->
+
+<!--      </div>-->
+
+<!--    </section>&lt;!&ndash; /Chefs Section &ndash;&gt;-->
+
+
+
+
+
+
+  </main>
+
+{% endblock %}
